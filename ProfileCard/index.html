@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #1e3a5f;
+      }
+      .card {
+        background: #2d5d86;
+        padding: 30px;
+        width: 400px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+        color: #ffffff;
+      }
+      .card:hover {
+        transform: scale(1.1);
+      }
+      .card img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .card h2 {
+        margin: 15px 0 10px;
+        font-size: 26px;
+        color: #ffffff;
+      }
+      .card p {
+        color: #d1e4ff;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      .social-icons a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 24px;
+        transition: color 0.3s;
+      }
+      .social-icons a:hover {
+        color: #ffcc00;
+      }
+      .social-icons img {
+        width: 30px;
+        height: 30px;
+        filter: brightness(0) invert(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg"
+        alt="Profile Picture"
+      />
+      <h2>Salva Tanveer</h2>
+      <p>Associate Software Engineer</p>
+      <p>
+        Computer Science graduate skilled in Java, Spring Boot, SQL, and web
+        development, with a passion for problem-solving and performance
+        optimization.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+        /></a>
+        <a href="https://github.com" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
+            alt="GitHub"
+        /></a>
+        <a href="https://leetcode.com" target="_blank"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+            alt="LeetCode"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
